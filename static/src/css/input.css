@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-custom-blue: #1e40af; 
+  --font-display: "Inter", sans-serif;
+}
+
+
+.btn-primary {
+    @apply bg-blue-500 text-white font-bold py-2 px-4 rounded-r hover:bg-blue-700 transition;
+}
+
+
+pre {
+    @apply py-4 font-mono overflow-x-auto;
+}
+
+
+:not(pre) > code {
+    @apply font-mono text-fuchsia-400 italic font-bold;
+}
